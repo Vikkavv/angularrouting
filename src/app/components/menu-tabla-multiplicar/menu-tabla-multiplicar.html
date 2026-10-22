@@ -1,0 +1,8 @@
+@for (item of [].constructor(10); track $index) {
+    <a style="padding: 0 .5rem 0 .5rem; color: black;" [routerLink]="['/tablamultiplcar', ($index + 1)]">Tabla del {{$index + 1}}</a>
+}
+<br>
+
+@for (numero of numeros; track $index) {
+     <a style="padding: 0 .5rem 0 .5rem; color: black;" [routerLink]="['/tablamultiplcar', numero]">Tabla del {{numero}}</a>
+}

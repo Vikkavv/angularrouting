@@ -2,4 +2,11 @@
     <a style="padding: 0 .5rem 0 .5rem; color: white;" [routerLink]="['/']">Home</a>
     <a style="padding: 0 .5rem 0 .5rem; color: white;" [routerLink]="['/cine']">Cine</a>
     <a style="padding: 0 .5rem 0 .5rem; color: white;" [routerLink]="['/musica']">Musica</a>
+    <a style="padding: 0 .5rem 0 .5rem; color: white;" [routerLink]="['/numerodoble']">Número doble</a>
+    <a style="padding: 0 .5rem 0 .5rem; color: white;" [routerLink]="['/numerodoble/2']">Número doble (Con parametro)</a>
+    @for (item of [].constructor(3); track $index) {
+        <a style="padding: 0 .5rem 0 .5rem; color: white;" [routerLink]="['/numerodoble', ($index + 5)]">
+            Doble {{$index + 5}}
+        </a>
+    }
 </div>

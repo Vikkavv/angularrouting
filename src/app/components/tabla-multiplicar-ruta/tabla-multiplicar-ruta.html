@@ -1,0 +1,17 @@
+<h1>Tabla de multiplicar del {{numero}}</h1>
+<table style="border: 1px solid black; border-collapse: collapse;">
+    <thead>
+        <tr>
+            <th>Operación</th>
+            <th>Resultado</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (resultado of resultados; track $index) {
+            <tr>
+                <td>{{resultado.operacion}}</td>
+                <td>{{resultado.resultado}}</td>
+            </tr>
+        }
+    </tbody>
+</table>
